@@ -1,9 +1,12 @@
 import express from 'express';
+import path from 'path';
 
 const app = express();
 
 const host = '0.0.0.0';
 const porta = 3000;
+
+app.use(express.static(path.join(process.cwd(),'./paginas')));
 
 function paginaInical(requisicao, resposta){
     resposta.send(`<!DOCTYPE html>
