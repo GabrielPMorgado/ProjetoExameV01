@@ -1,0 +1,23 @@
+{
+  "name": "projetoexamev01",
+  "version": "1.0.0",
+  "description": "Projeto pet",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielPMorgado/ProjetoExameV01.git"
+  },
+  "author": "Gabriel Morgado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielPMorgado/ProjetoExameV01/issues"
+  },
+  "homepage": "https://github.com/GabrielPMorgado/ProjetoExameV01#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
