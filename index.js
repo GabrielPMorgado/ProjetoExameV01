@@ -14,7 +14,7 @@ function paginaInical(requisicao, resposta){
         <title>Document</title>
     </head>
     <body>
-        
+         <h1>Olá Mundo</h1>
     </body>
     </html>`);
     resposta.end();
