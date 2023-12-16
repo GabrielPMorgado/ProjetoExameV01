@@ -6,7 +6,7 @@ const app = express();
 const host = '0.0.0.0';
 const porta = 3000;
 
-app.use(express.static(path.join(process.cwd(),'./paginas')));
+app.use(express.static(path.join(process.cwd(),'./cadastro')));
 
 function paginaInical(requisicao, resposta){
     resposta.send(`<!DOCTYPE html>
