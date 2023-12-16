@@ -8,7 +8,7 @@ const porta = 3000;
 
 app.use(express.static(path.join(process.cwd(),'./cadastro')));
 
-function paginaInical(requisicao, resposta){
+app.get('/',(requisicao, resposta) => {
     resposta.send(`<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -17,12 +17,15 @@ function paginaInical(requisicao, resposta){
         <title>Document</title>
     </head>
     <body>
-         <h1>Olá Mundo</h1>
+           <h1>MENU</h1>
+           <ul>
+              <li><a href="/cadastro>Cadastrar Usuario</a>"</li>
+           </ul>
     </body>
     </html>`);
-    resposta.end();
-}
-app.get('/',paginaInical);
+    
+});
+
 
 app.listen(porta, host, () =>{
     console.log(`Servidor execultando em http://${host}:${porta}`);
